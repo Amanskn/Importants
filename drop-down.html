@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Hide the checkbox */
+        #dropdown-checkbox {
+            display: none;
+        }
+
+        /* Style the label to look like the trigger */
+        #dropdown-trigger {
+            background-color: lightgray;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Style the dropdown content */
+        #dropdown-content {
+            display: none;
+            /* background-color: red; */
+            padding: 10px;
+        }
+
+        /* Show the dropdown content when the checkbox is checked */
+        #dropdown-checkbox:checked ~ #dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <label for="dropdown-checkbox" id="dropdown-trigger">Click me</label>
+    <input type="checkbox" id="dropdown-checkbox">
+    <div id="dropdown-content">
+        <!-- Dropdown options -->
+        <a href="#">Option 1</a>
+        <br>
+        <a href="#">Option 2</a>
+        <br>
+        <a href="#">Option 3</a>
+        <br>
+    </div>
+</body>
+</html>
